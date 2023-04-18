@@ -17,7 +17,7 @@ def main():
         screen.fill((0, 0, 0))
         screen.blit(txt, [300, 200])
         pg.display.update()
-        clock.tick(120)
+        clock.tick(1)
 
 
 if __name__ == "__main__":
