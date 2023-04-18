@@ -17,9 +17,10 @@ def main():
             if event.type == pg.QUIT: return
 
         tmr += 1
-        x = tmr % 1600
+        x = tmr % 3200
         screen.blit(bg_img,[-x,0])
-        screen.blit(bgr_img, [1600-x, 0])
+        screen.blit(bgr_img,[1600-x,0])
+        screen.blit(bg_img, [3200-x, 0])
         if tmr % 100 <= 50:
             a = 0
         else:
